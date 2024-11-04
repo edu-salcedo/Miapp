@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/stile.css" rel="stylesheet">
  
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <header >
+        <nav class="navbar navbar-expand-lg bg-dark.bg-gradient fixed-top pt-0 ">
             <div class="container-fluid ">
               <a class="navbar-brand px-5" href="index.html">Mylogo</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -19,116 +20,142 @@
               <div class="collapse navbar-collapse px-5 " id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-75 d-flex justify-content-around">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#pescados">Pescados y mariscos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="carta.html">Product</a>
+                    <a class="nav-link active" aria-current="page" href="#criollos">Criollos</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Menú
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Platos principales</a></li>
-                      <li><a class="dropdown-item" href="#">postres</a></li>
-                      <li><a class="dropdown-item" href="#">bebidas</a></li>
-                    </ul>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#chifa">Chifa</a>
                   </li>
-       
                 </ul>
-                <form class="d-flex " role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
               </div>
             </div>
         </nav>
     </header>
       
-    <!-- sección carousel-->
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    <!-- sección cards-->
+     <main class="pt-0">
+       <div class="w-100 text-center bg-img pt-5">
+          <div class="container ">
+             <h1 class="tittle ">Misky Misky</h1>
+             <h4 class="subtittle">Restaurant</h3>
+          </div>
+          <div class="container mt-5 py-3">
+            <div class="row row-cols-1 row-cols-lg-2 row-gap-5">
+                <div class="col" id="entrada">
+                  <div class="subtittle border-bottom border-danger">
+                    Entradas y caldos
+                  </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item list">Papa ala huancaina ------------------------$8.500</li>
+                        <li class="nav-item list">Anticucho con papa ala huancaina--------$10.000</li>
+                        <li class="nav-item list">Caldo de mote -----------------------------$10.000</li>
+                        <li class="nav-item list">Caldo de gallina----------------------------$10.000</li>
+                        <li class="nav-item list">sopa minuta--------------------------------$10.000</li>
+                    </ul>
+                </div>
+               <!-- -------criolloss-------------->
+                <div class="col " id="criollos">
+                  <div class="subtittle border-bottom border-danger">
+                    Platos Criollos
+                  </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item list">Broster -----------------------------------$12.000</li>
+                        <li class="nav-item list">Salchipollo--------------------------------$10.000</li>
+                        <li class="nav-item list">salchipapa --------------------------------$9.000</li>
+                        <li class="nav-item list">Arroz con pollo c/huancaina-------------$12.000</li>
+                        <li class="nav-item list">Seco de carne-----------------------------$11.000</li>
+                        <li class="nav-item list">Seco de cordero--------------------------$15.000</li>
+                        <li class="nav-item list">Lomo saltado-----------------------------$14.000</li>
+                        <li class="nav-item list">Lomo + chaufa----------------------------$18.000</li>
+                        <li class="nav-item list">Aji de gallina------------------------------$12.000</li>
+                        <li class="nav-item list">Bisteck a lo pobre-------------------------$12.000</li>
+                        <li class="nav-item list">Chicharon de cerdo-----------------------$15.000</li>
+                        <li class="nav-item list">Leche de tigre-----------------------------$12.000</li>
+                        
+                    </ul>
+                </div>
+                <!-- ---------------------------------->
+                <div class="col " id="pescados">
+                  <div class="subtittle border-bottom border-danger">
+                    Pescados y mariscos
+                  </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item list">Parihuela -----------------------------------$20.000</li>
+                        <li class="nav-item list">Sudado de pescado------------------------$15.000</li>
+                        <li class="nav-item list">Jalea + ceviche  -----------------------------$20.000</li>
+                        <li class="nav-item list">Arroz con pollo c/ ceviche------------------$14.000</li>
+                        <li class="nav-item list">Pescado frito--------------------------------$12.000</li>
+                        <li class="nav-item list">Jalea personal-------------------------------$18.000</li>
+                        <li class="nav-item list">Jalea familiar--------------------------------$25.000</li>
+                        <li class="nav-item list">Cricharon de calamar------------------------$18.000</li>
+                        <li class="nav-item list">Chicharon d pescado------------------------$18.000</li>
+                        <li class="nav-item list">Arroz con marisco----------------------------$20.000</li>
+                        <li class="nav-item list">Ceviche de pescado ---------------$18.000 / $25.000 </li>
+                        <li class="nav-item list">Ceviche mixto---------------------$20.000 / $27.000</li>
+                   
+                      </ul>
+                </div>
+                <!-- ---------------------------------->
+                <div class="col " id="jugos">
+                  <div class="subtittle border-bottom border-danger">
+                    Postres y jugos
+                  </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item list">Jarra de jugo -----------------------------------$8.000</li>
+                        <li class="nav-item list">(Anana, durasno, papaya, limonada)</li>
+                        <li class="nav-item list">Porcion de torta  --------------------------------$3.000</li>
+                        <li class="nav-item list">(Torta helada, Torta tres leches)</li>
+                    </ul>
+                </div>
+                <!-- ---------------------------------->
+                <div class="col" id="chifa">
+                  <div class="subtittle border-bottom border-danger">
+                    Chaufa
+                  </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item list">Vegie -------------------------------------$12.000</li>
+                        <li class="nav-item list">Pollo o carne-----------------------------$14.000</li>
+                        <li class="nav-item list">Especial cerdo --------------------------$18.000</li>
+                        <li class="nav-item list">Especial mariscos-----------------------$20.000</li>
+
+                    </ul>
+                </div>
+
+                <div class="col">
+                  <div class="subtittle border-bottom border-danger">
+                    Tallarin
+                  </div>
+                    <ul class="navbar-nav">
+                      <li class="nav-item list">Vegie -------------------------------------$12.000</li>
+                      <li class="nav-item list">Pollo o carne-----------------------------$14.000</li>
+                      <li class="nav-item list">Especial cerdo --------------------------$18.000</li>
+                      <li class="nav-item list">Especial mariscos-----------------------$20.000</li>
+                    </ul>
+                </div>
+
+                <div class="col" id="especiales">
+                  <div class="subtittle border-bottom border-danger">
+                    Especiales
+                  </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item list">Sopa wantan --------------------------------$12.000</li>
+                        <li class="nav-item list">Sopa wantan especial-----------------------$14.000</li>
+                        <li class="nav-item list">Aeropuerto----------------------------------$18.000</li>
+                        <li class="nav-item list">Combinado---------------------------------$20.000</li>
+                        <li class="nav-item list">Pollo agridulce -----------------------------$12.000</li>
+                        <li class="nav-item list">Karu wantan --------------------------------$12.000</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/ba1.jpg" class="d-block object-fit-cover w-100 vh-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/ba2.jpg" class="d-block w-100 object-fit-cover vh-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/ba3.jpg" class="d-block w-100 object-fit-cover vh-100 " alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-        <!-- sección cards -->
-        <section class="my-3" id="oradores">
-            <div class="container text-center">
-                <h2 class=" fw-light fs-5 text-uppercase">Nuestras  
-                    <span class=" d-block  fs-1 fw-bold text-uppercase">Promociones</span>
-                </h2>
-            </div>
-            <div class="row mx- mb-3 g-4">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="card w-75 m-auto h-100 ">
-                    <img src="img/steve.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <span class="badge bg-warning text-dark">Javascript</span>
-                        <span class="badge bg-info text-dark">React</span>
-                      <h5 class="card-title">Steve Jobs</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="card w-75 m-auto h-100" >
-                    <img src="img/bill.jpg" class="card-img-top" alt="...">                 
-                    <div class="card-body">
-                        <span class="badge bg-warning text-dark">Javascript</span>
-                        <span class="badge bg-info text-dark">React</span>
-                        <h5 class="card-title">Bill Gates</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="card w-75 m-auto h-100">
-                    <img src="img/ada.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <span class="badge bg-warning text-dark">Javascript</span>
-                        <span class="badge bg-info text-dark">React</span>
-                      <h5 class="card-title">Ada Lovelace</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-          
-              </div>
-          
-        </section>
+       </div>
+     </main>
+
 
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
   
