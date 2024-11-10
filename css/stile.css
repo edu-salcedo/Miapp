@@ -1,31 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
+* {}
+
+/* carousel  styles */
+
+.carousel-item img {
+    min-height: 300px;
+    max-height: 400px;
 }
 
-.bg-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mpichu.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
+.containerscroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
 }
 
-.tittle {
-    color: rgb(243, 9, 9);
-    font-size: 4rem;
-    font-weight: 800;
+.containerscroll::-webkit-scrollbar {
+    display: none;
 }
 
-.subtittle {
-    color: rgb(243, 9, 9);
-    font-size: 2rem;
-    font-weight: 800;
+
+/* card styles */
+
+.card {
+    width: 300px;
 }
 
-.list {
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-}
+.d-flex {}
