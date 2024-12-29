@@ -1,14 +1,33 @@
 
-const buttonScrollright = document.querySelector("#scrollbuttonRigth");
-const buttonScrollleft = document.querySelector("#scrollbuttonleft");
-const containerscroll = document.querySelector(".containerscroll");
+const swiper = new Swiper('.swiper', {
 
-buttonScrollright.addEventListener("click", () => {
-    containerscroll.scrollLeft -= 350;
+
+    // effect: "fade",
+    // autoplay: {
+    //     delay: 2000,
+    //     pauseOnMouseEnter: true,
+    //     disableOnInteraction: false,
+    // },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        },
+    }
 });
-
-buttonScrollleft.addEventListener("click", () => {
-    containerscroll.scrollLeft += 350;
-});
-
-

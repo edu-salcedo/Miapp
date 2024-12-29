@@ -1,27 +1,29 @@
-* {}
+* {
+    padding: 0;
+    margin: 0;
 
-/* carousel  styles */
-
-.carousel-item img {
-    min-height: 300px;
-    max-height: 400px;
 }
-
-.containerscroll {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: auto;
-}
-
-.containerscroll::-webkit-scrollbar {
-    display: none;
-}
-
 
 /* card styles */
-
-.card {
-    width: 300px;
+.swiper-slide img {
+    width: 20rem;
+    height: 25rem;
 }
 
-.d-flex {}
+
+.swiper-wrapper .mycard {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width:640px) {
+    .swiper-button {
+        display: none;
+    }
+}
