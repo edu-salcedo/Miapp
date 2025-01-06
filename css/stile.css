@@ -1,13 +1,36 @@
+:root {
+    --tittle-color: rgb(255, 143, 15);
+    --customize-background: rgb(19, 7, 63);
+    --text-color: white;
+}
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 
 }
 
+/* general styles */
+.tittle {
+    color: var(--tittle-color);
+}
+
+header {
+    max-width: 100%;
+    background-color: aqua;
+}
+
+.navbar {
+    max-width: 100%;
+    padding: 10px;
+}
+
 /* card styles */
-.swiper-slide img {
+.card-img {
     width: 20rem;
     height: 25rem;
+    border-radius: 10px;
 }
 
 
@@ -15,14 +38,61 @@
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
+}
+
+.combo-card {
+    text-align: center;
+}
+
+
+/* fotter */
+
+.footer {
+    background-color: var(--customize-background);
+    color: var(--text-color);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 
 }
 
+.footer-column h1 {
+    font-size: 20px;
+    padding: 0;
+}
+
+.ul-list {
+    list-style: none;
+    padding: 0;
+
+}
+
+.item-list {
+    padding: 0px 20px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: antiquewhite;
+}
 
 
 /* media queries */
 
 @media screen and (max-width:640px) {
+
+    .carousel-item img {
+        height: 20rem;
+        object-fit: ;
+    }
+
     .swiper-button {
         display: none;
     }
